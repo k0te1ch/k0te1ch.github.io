@@ -1,0 +1,30 @@
+:root{--bg:#0b0b12;--panel:#11111b;--bar:#181826;--line:#2a2a44;--fg:#d4d4e0;--strong:#f4f4fb;--muted:#a3a3bb;--acc:#6366f1;--acct:#a5b4fc;--btn:#fff}
+@media (prefers-color-scheme:light){:root{--bg:#f6f6fb;--panel:#fff;--bar:#ececf6;--line:#cfcfe3;--fg:#2b2b3d;--strong:#12121c;--muted:#555570;--acc:#4f46e5;--acct:#4338ca;--btn:#fff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 "JetBrains Mono",ui-monospace,Consolas,monospace}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--panel);padding:8px;z-index:9}
+main{max-width:960px;margin:0 auto;padding:48px 16px 24px;display:flex;flex-direction:column;gap:28px}
+a{color:var(--acct)}a:hover{color:var(--strong)}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.term,.card{background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:var(--bar);border-bottom:1px solid var(--line);border-radius:12px 12px 0 0;font-size:12px;color:var(--muted)}
+.bar i{width:11px;height:11px;border-radius:50%;background:var(--line)}.bar i.on{background:var(--acc)}.bar span{margin-left:8px}
+.body{padding:24px clamp(16px,4vw,32px)}
+.body p{margin:0}.gap{margin-top:14px!important}
+h1{font-size:clamp(24px,5vw,34px);line-height:1.2;color:var(--strong);margin:6px 0}
+.p{color:var(--acct)}.muted{color:var(--muted)}.small{font-size:13px}
+.plain,.dots{list-style:none;margin:0;padding:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.card{padding:22px;border-radius:10px}
+h2{font-size:15px;color:var(--acct);margin:0 0 10px}
+.sect{margin-bottom:14px}
+h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0 0 8px}.meta{font-size:12px;color:var(--muted)}
+.dots li{display:flex;align-items:center;gap:12px}
+.dots li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--acc);flex:none}
+.links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.links a{text-decoration:none;font-weight:600;color:var(--btn);background:var(--acc);border-radius:6px;padding:10px 22px}
+.links a:hover{color:var(--btn);filter:brightness(1.12)}
+footer{text-align:center;font-size:12px;color:var(--muted);padding:8px 16px 40px}
+@media (prefers-reduced-motion:no-preference){.cursor{animation:b 1.1s steps(1) infinite}}
+@keyframes b{50%{opacity:0}}
