@@ -35,3 +35,4 @@ main,footer{position:relative;z-index:1}
 .hl li{position:relative;padding-left:18px;margin:4px 0}
 .hl li::before{content:"→";position:absolute;left:0;color:var(--acc)}
 #projects .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+#what .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
