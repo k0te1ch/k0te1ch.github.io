@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>k0te1ch — Backend Engineer &amp; System Designer</title>
+<title data-i18n="title">k0te1ch — Backend Engineer &amp; System Designer</title>
 <meta name="description" content="Backend engineer and system designer. Python, C++, Telegram bots. Projects: PodBoxBot, PowerPeek, DialogEngine, python-template.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -11,20 +11,20 @@
 </head>
 <body>
 <canvas id="sea" aria-hidden="true"></canvas>
-<a class="skip" href="#projects">Skip to projects</a>
+<a class="skip" href="#projects" data-i18n="skip">Skip to projects</a>
 <main>
   <section class="term" aria-labelledby="h1">
-    <div class="bar" aria-hidden="true"><i></i><i></i><i class="on"></i><span>k0te1ch@github: ~</span></div>
+    <div class="bar" aria-hidden="true"><i></i><i></i><i class="on"></i><span>k0te1ch@github: ~</span><button class="lang" id="lang" type="button" aria-label="Switch language">RU</button></div>
     <div class="body">
       <p><span class="p">$</span> whoami</p>
-      <h1 id="h1">Backend Engineer &amp; System Designer</h1>
-      <p class="muted">I design and build backend systems focused on scalability and real-world impact.</p>
+      <h1 id="h1" data-i18n="h1">Backend Engineer &amp; System Designer</h1>
+      <p class="muted" data-i18n="lead">I design and build backend systems focused on scalability and real-world impact.</p>
       <p class="gap"><span class="p">$</span> cat focus.txt</p>
       <ul class="plain muted">
-        <li><span class="p">→</span> backend architecture &amp; APIs</li>
-        <li><span class="p">→</span> performance &amp; optimization (C++ / Python)</li>
-        <li><span class="p">→</span> system design &amp; scalability</li>
-        <li><span class="p">→</span> building monetizable products</li>
+        <li data-i18n="f1"><span class="p">→</span> backend architecture &amp; APIs</li>
+        <li data-i18n="f2"><span class="p">→</span> performance &amp; optimization (C++ / Python)</li>
+        <li data-i18n="f3"><span class="p">→</span> system design &amp; scalability</li>
+        <li data-i18n="f4"><span class="p">→</span> building monetizable products</li>
       </ul>
       <p class="gap"><span class="p">$</span> <span class="cursor" aria-hidden="true">_</span></p>
     </div>
@@ -44,20 +44,20 @@
     <h2 id="wh" class="sect">what-i-do/</h2>
     <div class="grid">
       <article class="card">
-        <h3>Telegram bots and automation</h3>
-        <p>Bots that do real work: publishing podcast episodes, driving form-style dialogs. Python, aiogram.</p>
+        <h3 data-i18n="w1h">Telegram bots and automation</h3>
+        <p data-i18n="c1p">Bots that do real work: publishing podcast episodes, driving form-style dialogs. Python, aiogram.</p>
       </article>
       <article class="card">
-        <h3>Event-driven backends</h3>
-        <p>Services that talk through Kafka, run in Docker and ship with CI. Monitoring with Prometheus, Loki and Grafana.</p>
+        <h3 data-i18n="w2h">Event-driven backends</h3>
+        <p data-i18n="c2p">Services that talk through Kafka, run in Docker and ship with CI. Monitoring with Prometheus, Loki and Grafana.</p>
       </article>
       <article class="card">
-        <h3>Native Windows tools</h3>
-        <p>C++20 desktop utilities that start fast and stay small: one executable, no installer, no network code.</p>
+        <h3 data-i18n="w3h">Native Windows tools</h3>
+        <p data-i18n="c3p">C++20 desktop utilities that start fast and stay small: one executable, no installer, no network code.</p>
       </article>
       <article class="card">
-        <h3>Developer tooling</h3>
-        <p>Libraries and templates other projects build on: a dialog engine, an aiogram project template, a Python project template.</p>
+        <h3 data-i18n="w4h">Developer tooling</h3>
+        <p data-i18n="c4p">Libraries and templates other projects build on: a dialog engine, an aiogram project template, a Python project template.</p>
       </article>
     </div>
   </section>
@@ -67,26 +67,26 @@
     <div class="grid">
       <article class="card">
         <h3><a href="https://github.com/k0te1ch/PodBoxBot">PodBoxBot</a></h3>
-        <p>Telegram bot that automates podcast episode publishing for a real podcast team: mp3 tagging, FTP upload, WordPress posts with Podlove metadata.</p>
-        <ul class="hl"><li>Microservices: the bot sends a request to Kafka, publisher services (FTP, WordPress, Boosty) execute it and report back</li><li>Observability with Prometheus, Loki and Grafana, dashboards in Russian</li><li>CI and automated releases, 12 of them so far</li></ul>
+        <p data-i18n="c5p">Telegram bot that automates podcast episode publishing for a real podcast team: mp3 tagging, FTP upload, WordPress posts with Podlove metadata.</p>
+        <ul class="hl" data-i18n="c1l"><li>Microservices: the bot sends a request to Kafka, publisher services (FTP, WordPress, Boosty) execute it and report back</li><li>Observability with Prometheus, Loki and Grafana, dashboards in Russian</li><li>CI and automated releases, 12 of them so far</li></ul>
         <p class="meta">Python · Kafka · Docker</p>
       </article>
       <article class="card">
         <h3><a href="https://github.com/k0te1ch/powerpeek">PowerPeek</a></h3>
-        <p>Device battery in the Windows tray: live icon, low-battery sounds and notifications, charge history.</p>
-        <ul class="hl"><li>One 4 MB executable: no installer, no runtime, no telemetry</li><li>Tray icon drawn at runtime as a battery, a ring gauge or a plain percentage</li><li>Seven sound events and Fluent notifications that never steal focus from a game</li></ul>
+        <p data-i18n="c6p">Device battery in the Windows tray: live icon, low-battery sounds and notifications, charge history.</p>
+        <ul class="hl" data-i18n="c2l"><li>One 4 MB executable: no installer, no runtime, no telemetry</li><li>Tray icon drawn at runtime as a battery, a ring gauge or a plain percentage</li><li>Seven sound events and Fluent notifications that never steal focus from a game</li></ul>
         <p class="meta">C++20 · GPL-3.0</p>
       </article>
       <article class="card">
         <h3><a href="https://github.com/k0te1ch/DialogEngine">DialogEngine</a></h3>
-        <p>Lightweight dialog engine for form-driven Telegram bots, without handler spaghetti.</p>
-        <ul class="hl"><li>The dialog is described as data: dict, JSON or YAML</li><li>Sync and async validators, conditional transitions, session statuses</li><li>Pure Python, stdlib only; optional pydantic and aiogram integrations</li></ul>
+        <p data-i18n="c7p">Lightweight dialog engine for form-driven Telegram bots, without handler spaghetti.</p>
+        <ul class="hl" data-i18n="c3l"><li>The dialog is described as data: dict, JSON or YAML</li><li>Sync and async validators, conditional transitions, session statuses</li><li>Pure Python, stdlib only; optional pydantic and aiogram integrations</li></ul>
         <p class="meta">Python 3.12+ · MIT · 3 releases</p>
       </article>
       <article class="card">
         <h3><a href="https://github.com/k0te1ch/python-template">python-template</a></h3>
-        <p>A ready-to-use Python project template: structure, dependency management, testing, linting and CI from the first commit.</p>
-        <ul class="hl"><li>Logging, <code>.env</code> settings via pydantic-settings, pytest and Poetry out of the box</li><li>Ruff, pre-commit and commitizen for Conventional Commits</li><li>Releases, changelog and tags automated with release-please in CI</li></ul>
+        <p data-i18n="c8p">A ready-to-use Python project template: structure, dependency management, testing, linting and CI from the first commit.</p>
+        <ul class="hl" data-i18n="c4l"><li>Logging, <code>.env</code> settings via pydantic-settings, pytest and Poetry out of the box</li><li>Ruff, pre-commit and commitizen for Conventional Commits</li><li>Releases, changelog and tags automated with release-please in CI</li></ul>
         <p class="meta">Python · Poetry · 2 releases</p>
       </article>
     </div>
@@ -98,7 +98,8 @@
     <a href="https://github.com/k0te1ch">GitHub</a>
   </nav>
 </main>
-<footer>build → validate → scale → monetize</footer>
+<footer data-i18n="footer">build → validate → scale → monetize</footer>
+<script src="i18n.js"></script>
 <script src="sea.js" defer></script>
 </body>
 </html>
