@@ -36,3 +36,6 @@ main,footer{position:relative;z-index:1}
 .hl li::before{content:"→";position:absolute;left:0;color:var(--acc)}
 #projects .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
 #what .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.lang{margin-left:auto;font:inherit;font-weight:600;color:var(--acct);background:transparent;border:1px solid var(--line);border-radius:6px;padding:2px 10px;cursor:pointer}
+.lang:hover{color:var(--strong);border-color:var(--acc)}
+.lang:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
